@@ -20,11 +20,12 @@ export const Home = () => {
                value="Logout"
               onClick={()=>{dispatch(LoginA())}} 
               />
-            </navbar>
+            </navbar> 
+           
             <Switch >
-                <Route  path="/"exact component={Employee}></Route>
-                <Route  path="/Roles"exact component={Roles}></Route>
-                <Route  path="/Organizational_unit"exact component={Organizational_unit}></Route>
+                <Route exact path="/" component={Employee}></Route>
+                <Route  path="/Roles" component={Roles}></Route>
+                <Route  path="/Organizational_unit" component={Organizational_unit}></Route>
             </Switch>
             </BrowserRouter>
         </>

@@ -11,3 +11,21 @@ export const HomeA=()=>
         type:"home"
     };
 } ;
+
+export const RollA=(data)=>
+{
+    
+    return{
+        type:"RoleList",
+        res:data,
+    };
+} ;
+
+export const OrgA=(data)=>
+{
+    
+    return{
+        type:"OrgList",
+        res:data,
+    };
+} ;
